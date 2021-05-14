@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCL - User</title>
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@4.0.2/dist/socket.io.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="answer-cards.js"></script>
+    <script src="question-cards.js"></script>
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <header><img src="ChristiansLike-Logo.png" /></header>
+    <div id="app" class="container">
+      <!-- Main Menu -->
+      <div id="main-menu" class="container">
+        <form
+          id="join-room"
+          class="container"
+          onsubmit="return onUsernameSubmit()"
+        >
+          <label for="username">USERNAME</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="enter your username"
+          />
+          <input id="main-login" class="submit" type="submit" value="JOIN" />
+        </form>
+      </div>
+      <!-- Players Lobby -->
+      <div id="lobby" class="container hidden">
+        <h1 id="welcome-name">Welcome!</h1>
+        <h2 id="joined-title">Joined Users</h2>
+        <ul id="joined-users"></ul>
+        <button id="start-game-btn" onclick="hostStartGame()">
+          Start Game
+        </button>
+      </div>
+      <!-- Player Pick Card Screen -->
+      <div id="player-pick-card" class="container hidden">
+        <h1 id="choosing-player"></h1>
+        <h2 id="question-card"></h2>
+        <div id="card-list"></div>
+        <div id="picked-container" class="hidden">
+          <h1 id="picked-title">You picked :</h1>
+          <div id="picked-card"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

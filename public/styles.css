@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #0186d5;
+  height: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hidding {
+  opacity: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+header img {
+  height: 60px;
+  width: auto;
+}
+
+#app {
+  height: calc(100% - 80px) !important;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transition: all 0.5s ease;
+  flex-direction: column;
+}
+
+#join-room {
+  flex-direction: column;
+}
+
+#join-room label {
+  font-size: 20px;
+  align-self: end;
+  text-transform: uppercase;
+}
+
+#join-room input {
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding: 6px 0;
+  text-align: center;
+  border: 0;
+  border-radius: 6px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+#join-room input.submit {
+  padding: 6px 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+input:disabled {
+  background-color: #00000055 !important;
+}
+
+#welcome-name,
+#joined-users li {
+  text-align: center;
+}
+
+#joined-title {
+  text-decoration: underline;
+}
+
+#joined-users {
+  list-style-type: none;
+}
+
+button#start-game-btn {
+  display: none;
+  margin-top: 20px;
+  padding: 6px 20px;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+  border: 0;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+div#player-pick-card {
+  align-items: unset;
+  justify-content: unset;
+}
+
+h1#choosing-player {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+h2#question-card {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+div#card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+#card-list div {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  color: #0186d5;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #000;
+}
+
+#picked-container h1 {
+  text-align: center;
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+#picked-card {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  color: #0186d5;
+  font-size: 14px;
+  padding: 10px;
+  border: solid 1px #000;
+  margin: 10px auto;
+}
